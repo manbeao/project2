@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+/* header */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(225, 225, 225, .1);
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    height: 6rem;
+}
+
+header .container {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header .container .logo {
+    height: 11rem;
+    line-height: 11rem;
+    width: 30%;
+    background-color: black;
+    color: white;
+    float: left;
+}
+
+header .container .link {
+    background-color: white;
+}
+
+header .container .link li {
+    display: inline;
+    position: relative;
+    left: 20rem;
+    height: 6rem;
+    line-height: 6rem;
+    padding-right: 3rem;
+    width: 70%;
+}
+
+/* nav */
+
+nav {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(215, 215, 215);
+}
+
+nav .container {
+    background-color: white;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+
+
+/* banner1 */
+.banner1 {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(184, 184, 184);
+}
+
+.banner1 .container {
+    background-color: black;
+
+}
+
+.banner1 .container a {
+    color: white;
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+}
+
+
+/* banner2 */
+.banner2 {
+    width: 100%;
+    height: 70rem;
+    background-color: rgb(156, 156, 156);
+}
+
+.banner2 .container {
+    background-color: rgb(79, 79, 79);
+}
+
+.banner2 .container a {
+    width: 100%;
+    height: 70rem;
+    line-height: 70rem;
+}
+
+
+
+/* content1 */
+.content1 {
+    width: 100%;
+    height: 50rem;
+    background-color: rgb(125, 125, 125);
+
+}
+
+.content1 .container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content1 .container .img {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    top: -30px;
+}
+
+.content1 .container .img a {
+    position: absolute;
+    top: 320px;
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 50px;
+    left: 0;
+}
+
+
+
+/* content2 */
+.content2 {
+    width: 100%;
+    height: 70rem;
+    background-color: rgb(106, 106, 106);
+}
+
+.content2 .container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2 .container .imgs {
+    background-color: white;
+    width: 350px;
+    height: 350px;
+
+}
+
+.content2 .container .img1 {
+    position: relative;
+    top: 0;
+}
+
+.content2 .container .img2 {
+    position: relative;
+    top: 25px;
+}
+
+.content2 .container .img3 {
+    position: relative;
+    top: 50px;
+}
+
+.content2 .container .text {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 500px;
+
+}
+
+.content2 .container .imgs a {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 50px;
+    left: 0;
+    top: 370px;
+}
+
+
+
+/* content3 */
+.content3 {
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(81, 81, 81);
+}
+
+.content3 .container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content3 .container .img {
+    background-color: white;
+    width: 260px;
+    height: 200px;
+}
+
+
+
+/* content4 */
+.content4 {
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(58, 58, 58)
+}
+
+.content4 .container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content4 .container .img {
+    position: relative;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
+
+.content4 .container .text {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 200px;
+    margin-left: 330px;
+}
+
+.content4 .container .textbox {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    margin-top: 100px;
+}
+
+
+
+/* content5 */
+.content5 {
+    width: 100%;
+    height: 90rem;
+    background-color: rgb(30, 30, 30);
+}
+
+.content5 .container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content5 .container .img {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
+
+.content5 .container .img1,
+.img2 {
+    margin-top: 20px;
+}
+
+.content5 .container .img3,
+.img4 {
+    margin-bottom: 70px;
+}
+
+.content5 .container a {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(16, 16, 16);
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .container .logo {
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 200px;
+    height: 100px;
+    width: 100%;
+    margin-top: -100px;
+}
+footer .container .copy{
+    background-color: white;
+    position: relative;
+    top: -40px;
+    height: 50px;
+    width: 100%;
+}
