@@ -166,7 +166,7 @@ a:hover {
 }
 
 body {
-    font-family: 'Pretendard', sans-serif;
+    font-family:'ITCFrank-BkCd','Noto Sans KR', sans-serif;
     color: var(--text1);
     font-size: 1.6rem;
 }

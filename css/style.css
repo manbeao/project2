@@ -39,12 +39,12 @@ header .container {
 }
 
 header .container .logo {
+    position: absolute;
     height: 11rem;
-    line-height: 11rem;
-    width: 30%;
-    background-color: black;
+    width: 384px;
     color: white;
     float: left;
+    background: url(../img/vans-logo.svg) no-repeat center center/cover;
 }
 
 header .container .link {
@@ -107,6 +107,7 @@ nav .container {
 
 .banner2 .container {
     background-color: rgb(79, 79, 79);
+    background: url(../img/banner2.jpg) no-repeat center center/cover;
 }
 
 .banner2 .container a {
@@ -121,7 +122,7 @@ nav .container {
 .content1 {
     width: 100%;
     height: 50rem;
-    background-color: rgb(125, 125, 125);
+    background-color: rgb(134, 134, 134);
 
 }
 
@@ -139,6 +140,23 @@ nav .container {
     height: 300px;
     position: relative;
     top: -30px;
+
+}
+
+.content1 .container .img:first-child {
+    background: url(../img/content1-1.jpg) no-repeat center center/cover;
+}
+
+.content1 .container .img:nth-child(2) {
+    background: url(../img/content1-2.jpg) no-repeat center center/cover;
+}
+
+.content1 .container .img:nth-child(3) {
+    background: url(../img/content1-3.jpg) no-repeat center center/cover;
+}
+
+.content1 .container .img:last-child {
+    background: url(../img/content1-4.jpg) no-repeat center center/cover;
 }
 
 .content1 .container .img a {
@@ -167,26 +185,23 @@ nav .container {
     align-items: center;
 }
 
+
 .content2 .container .imgs {
     background-color: white;
-    width: 350px;
+    width: 400px;
     height: 350px;
-
-}
-
-.content2 .container .img1 {
     position: relative;
-    top: 0;
+}
+.content2 .container .img1 {
+    background: url(../img/content2-1.jpg) no-repeat center center/cover;
 }
 
 .content2 .container .img2 {
-    position: relative;
-    top: 25px;
+    background: url(../img/content2-2.jpg) no-repeat center center/cover;
 }
 
 .content2 .container .img3 {
-    position: relative;
-    top: 50px;
+    background: url(../img/content2-3.jpg) no-repeat center center/cover;
 }
 
 .content2 .container .text {
@@ -231,6 +246,21 @@ nav .container {
     height: 200px;
 }
 
+.content3 .container .img:first-child {
+    background: url(../img/content3-1.jpg) no-repeat center center/cover;
+}
+
+.content3 .container .img:nth-child(2) {
+    background: url(../img/content3-2.jpg) no-repeat center center/cover;
+}
+
+.content3 .container .img:nth-child(3) {
+    background: url(../img/content3-3.jpg) no-repeat center center/cover;
+}
+
+.content3 .container .img:last-child {
+    background: url(../img/content3-4.jpg) no-repeat center center/cover;
+}
 
 
 /* content4 */
@@ -252,6 +282,7 @@ nav .container {
     background-color: white;
     width: 500px;
     height: 300px;
+    background: url(../img/content4-1.jpg) no-repeat center center/cover;
 }
 
 .content4 .container .text {
@@ -311,7 +342,18 @@ nav .container {
     height: 50px;
     margin-bottom: 50px;
 }
-
+.content5 .container .img1 {
+    background: url(../img/content5-1.jpg) no-repeat center center/cover;
+}
+.content5 .container .img2 {
+    background: url(../img/content5-2.jpg) no-repeat center center/cover;
+}
+.content5 .container .img3 {
+    background: url(../img/content5-3.jpg) no-repeat center center/cover;
+}
+.content5 .container .img4 {
+    background: url(../img/content5-4.jpg) no-repeat center center/cover;
+}
 
 
 
@@ -337,7 +379,8 @@ footer .container .logo {
     width: 100%;
     margin-top: -100px;
 }
-footer .container .copy{
+
+footer .container .copy {
     background-color: white;
     position: relative;
     top: -40px;

@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    position: relative;
+    background-color: yellowgreen;
+}
+
+/* header */
+header{
+    display: flex;
+    
+}
+header .container .logo{
+    width: 20%;
+    height: 10rem;
+}
+header .container .logo{
+    position: relative;
+    top: 20px;
+    margin: 10px auto;
+    width: 10%;
+    height: 10rem;
+}
+header .container img{
+    justify-content: center;
+    align-items: center;
+}
+header .container .link{
+    position: relative;
+    width: 1024px;
+    height: 5rem;
+    top: 30px;
+    text-align: right;
+    right:5%;
+}
+header .container .link li{
+    display: inline-block;
+    padding-left: 3rem;
+}
+header .container .link li a{
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/* nav */
+nav{
+    display: flex;
+}
+nav .container .nav{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: right;
+    right:5%;
+    top: -60px;
+}
+nav .container .nav li{
+    display: inline-block;
+    text-align: right;
+    padding-left: 3rem;
+}
+nav .container .nav li a{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+nav .container .nav li:nth-child(5) a{
+    color: #ca1d31;
+}
+nav .container .nav li:nth-child(8) a{
+    color: #ca1d31;
+}
+nav .container .nav li a::after{
+    position: relative;
+content: '/';
+color: black;
+left: 20px;
+}
+
+
+/* main */
+.banner1{
+    width: 100%;
+    height: 3rem; 
+    background-color: black;
+    position: relative;
+    top: -50px;
+
+}
+.banner1 a{
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 900;
+    height: 3rem; 
+    line-height: 3rem;
+
+}
+.banner1 a::before{
+    content: '<';
+    position: absolute;
+    left: 3%;
+}
+.banner1 a::after{
+    content: '>';
+    position: absolute;
+    right: 3%;
+}
+
+
+.banner2 img{
+    width: 100%;
+    position: relative;
+    top: -50px;
+    height: auto;
+}
+
+
+
+.content1 .container{
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.content1 .container ul {
+    width: 40rem;
+    margin: auto;
+}
+.content1 .container ul li a span {
+   font-weight: 500;
+   line-height: 1.7;
+}
+.content1 .container ul li img{
+    width: 40rem;
+    margin: auto;
+}
+.content1 .container ul li h3{
+    position: relative;
+    top: 20px;
+    font-size: 22px;
+    width: 40rem;
+    font-weight: bold;
+    color: black;
+}
+.content1 .container ul li:nth-child(2) a{
+    position: relative;
+    top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    padding: 15px 40px;
+}
+.content1 .container ul:first-child li:nth-child(2) a{
+
+    top: 50px;
+
+}
+.content1 .container ul:first-child{
+    position: relative;
+    top: 3px;
+}
+.content1 .container ul:first-child img{
+    position: relative;
+    top: -14px;
+}
+.content1 .container ul:first-child h3{
+    position: relative;
+    top: 6px;
+}
+.content1 .container ul:first-child li span{
+    position: relative;
+    top: -15px;
+}
+
+
+
+.content2{
+    position: relative;
+    top: 150px;
+    display: flex;
+}
+.content2 .container .box{
+    position: relative;
+}
+.content2 h2{
+    width: 500px;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 0;
+    left:640px;
+    margin-left: -250px;
+    text-align: center;
+}
+
+.content2 .container ul{
+    width: 250px;
+    position: relative;
+    top: 70px; 
+    margin: 0 auto;
+
+}
+.content2 .container ul li{
+    width: 100%;
+    position: relative;
+    
+}
+.content2 .container ul li img{
+    width: 100%;
+   
+
+}
+
+
+
+
+
+.content3{
+    position: relative;
+    width: 100%;
+    top: 300px;
+    display: flex;
+}
+.content3 .container 
