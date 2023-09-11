@@ -1,0 +1,896 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    position: relative;
+
+}
+
+/* header */
+header {
+    display: flex;
+
+}
+
+header .container .logo {
+    width: 20%;
+    height: 10rem;
+}
+
+header .container .logo {
+    position: relative;
+    top: 20px;
+    margin: 10px auto;
+    width: 10%;
+    height: 10rem;
+}
+
+header .container img {
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .link {
+    position: relative;
+    width: 1024px;
+    height: 5rem;
+    top: 30px;
+    text-align: right;
+    right: 5%;
+}
+
+header .container .link li {
+    display: inline-block;
+    padding-left: 3rem;
+}
+
+header .container .link li a {
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+header .container .link li:nth-child(4) a {
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header .container .link li:nth-child(5) a {
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header .container .link li:nth-child(6) a {
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header .container .link li a img {
+    position: relative;
+    color: #9b9b9b;
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    right: 7px;
+}
+
+/* nav */
+nav {
+    display: flex;
+}
+
+nav .container .nav {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: right;
+    right: 5%;
+    top: -60px;
+}
+
+nav .container .nav li {
+    display: inline-block;
+    text-align: right;
+    padding-left: 3rem;
+}
+
+nav .container .nav li a {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+nav .container .nav li:hover:not(.nav li:nth-child(5), .nav li:nth-child(8)) a {
+    color: #ca1d31;
+    transition: all 0.5s;
+}
+
+nav .container .nav li:nth-child(5) a {
+    color: #ca1d31;
+}
+
+nav .container .nav li:nth-child(8) a {
+    color: #ca1d31;
+}
+
+nav .container .nav li a::after {
+    position: relative;
+    content: '/';
+    color: black;
+    left: 20px;
+}
+
+nav .container .nav li ul {
+    display: none;
+}
+
+/* main */
+.banner1 {
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    position: relative;
+    top: -50px;
+
+}
+
+.banner1 a {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 900;
+    height: 3rem;
+    line-height: 3rem;
+
+}
+
+.banner1 a::before {
+    content: '<';
+    position: absolute;
+    left: 3%;
+}
+
+.banner1 a::after {
+    content: '>';
+    position: absolute;
+    right: 3%;
+}
+
+
+.banner2 img {
+    width: 100%;
+    position: relative;
+    top: -50px;
+    height: auto;
+}
+
+
+
+.content1 .container {
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+.content1 .container ul {
+    width: 40rem;
+    margin: auto;
+    transition: all 0.7s;
+}
+
+.content1 .container ul li a span {
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.content1 .container ul li img {
+    width: 40rem;
+    margin: auto;
+}
+
+.content1 .container ul li h3 {
+    position: relative;
+    top: 20px;
+    font-size: 22px;
+    width: 40rem;
+    font-weight: bold;
+    color: black;
+}
+
+.content1 .container ul li:nth-child(2) a {
+    position: relative;
+    top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    padding: 15px 40px;
+}
+
+.content1 .container ul li:nth-child(2) a:hover {
+    background-color: #ca1d31;
+    transition: all 0.5s;
+}
+
+.content1 .container ul:first-child li:nth-child(2) a {
+
+    top: 50px;
+
+}
+
+.content1 .container ul:first-child {
+    position: relative;
+    top: 3px;
+}
+
+.content1 .container ul:first-child img {
+    position: relative;
+    top: -14px;
+}
+
+.content1 .container ul:first-child h3 {
+    position: relative;
+    top: 6px;
+}
+
+.content1 .container ul:first-child li span {
+    position: relative;
+    top: -15px;
+}
+
+
+
+.content2 {
+    position: relative;
+    top: 150px;
+    display: flex;
+    margin: auto;
+}
+
+.content2 .container {
+    width: auto;
+    height: auto;
+}
+
+.content2 .container .box {
+    position: relative;
+}
+
+.content2 h2 {
+    width: 400px;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: -10px;
+    left: 540px;
+    margin-left: -200px;
+    text-align: center;
+}
+
+.content2 .container ul {
+    width: 250px;
+    position: relative;
+    top: 70px;
+    margin: 0 10px;
+    transition: all 0.5s;
+
+}
+
+.content2 .container ul li {
+    width: 100%;
+    position: relative;
+
+}
+
+.content2 .container ul li img {
+    width: 100%;
+}
+
+.content2 .container ul li a div {
+    position: relative;
+    top: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ca1d31;
+}
+
+.content2 .container ul li a span {
+    position: relative;
+    top: 5px;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.content2 .container ul li a span span {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.content2 .container .content2_img1 li:hover img {
+    transition: all 0.7s;
+    width: 100%;
+    width: 250px;
+    position: relative;
+    margin-top: -20px;
+    box-shadow: 0px 3px 5px #7a7a7a;
+    background: url(./img/content2-1.jpg);
+}
+
+.content2 .container .content2_img2 li:hover img {
+    transition: all 0.7s;
+    width: 100%;
+    width: 250px;
+    position: relative;
+    margin-top: -20px;
+    box-shadow: 0px 1px 5px #7a7a7a;
+    background: url(./img/content2-2.jpg);
+}
+
+.content2 .container .content2_img3 li:hover img {
+    transition: all 0.7s;
+    width: 100%;
+    width: 250px;
+    position: relative;
+    margin-top: -20px;
+    box-shadow: 0px 1px 5px #7a7a7a;
+    background: url(./img/content2-3.jpg);
+}
+
+.content2 .container .content2_img4 li:hover img {
+    transition: all 0.7s;
+    width: 100%;
+    width: 250px;
+    position: relative;
+    margin-top: -20px;
+    box-shadow: 0px 1px 5px #7a7a7a;
+    background: url(./img/content2-4.jpg);
+}
+
+
+
+
+.content3 {
+    position: relative;
+    top: 300px;
+    display: flex;
+}
+
+.content3 .container {
+    width: auto;
+    height: auto;
+}
+
+.content3 .container h2 {
+    width: 400px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 540px;
+    margin-left: -200px;
+    text-align: center;
+}
+
+.content3 .container ul {
+    width: 250px;
+    position: relative;
+    top: 80px;
+    margin: 0 10px;
+}
+
+.content3 .container ul li {
+    width: 100%;
+    position: relative;
+
+}
+
+.content3 .container ul li img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.content3 .container ul li a span {
+    position: relative;
+    top: 5px;
+    line-height: 1.7;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.content3 .container ul li img:hover {
+    opacity: 1;
+    border-radius: 20%;
+    transition: all 0.4s;
+
+}
+
+.content3 .container ul li:hover a span {
+    border-bottom: #7a7a7a 1px solid;
+}
+
+
+
+
+
+.content4 {
+    position: relative;
+    top: 500px;
+}
+
+.content4 .container {
+    width: auto;
+    height: auto;
+
+}
+
+.content4 .content4_img1 {
+    width: 400px;
+    height: 300px;
+    background: url(./img/content4-1.jpg) no-repeat center center;
+    margin: 0 15px;
+}
+
+.content4 .content4_img2 {
+    width: 400px;
+    height: 300px;
+    background: url(./img/content4-2.jpg) no-repeat center center;
+    margin: 0 15px;
+}
+
+.content4 .content4_img3 {
+    width: 400px;
+    height: 300px;
+    background: url(./img/content4-3.jpg) no-repeat center center;
+    margin: 0 15px;
+}
+
+.content4 .container h2 {
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+
+}
+
+.content4 .container h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.content4 .container a {
+    display: block;
+    line-height: 2;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+    top: -30px;
+    width: 100px;
+    margin: auto;
+
+}
+
+.content4 .container a:hover {
+
+    background-color: #ca1d31;
+    transition: all 0.5s;
+}
+
+
+
+
+
+.content5 {
+    position: relative;
+    top: 600px;
+    width: 100%;
+    height: 570px;
+    background-color: #f2f2f2;
+}
+
+
+.content5 .container div img {
+    width: 300px;
+    position: relative;
+    top: 150px;
+    margin: 0 10px;
+}
+
+.content5 .container h2 {
+    font-size: 45px;
+    font-weight: 1000;
+    width: 500px;
+    position: absolute;
+    top: 70px;
+    left: 640px;
+    margin-left: -250px;
+}
+
+.content5 .container>p {
+    color: #ca1d31;
+    font-size: 20px;
+    font-weight: 1000;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 640px;
+    margin-left: -100px;
+}
+
+.content5 .container div p {
+    width: 300px;
+    position: relative;
+    top: 160px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+
+}
+
+.content5 .container div span {
+    width: 300px;
+    position: relative;
+    top: 180px;
+
+}
+
+.content5 .container .content5_img1 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text2);
+    right: 112px;
+}
+
+.content5 .container .content5_img2 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text2);
+    right: 125px;
+}
+
+.content5 .container .content5_img3 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text2);
+    right: 127px;
+}
+
+.content5 .container .content5_img4 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text2);
+    right: 87px;
+}
+
+.content5 .container h3 {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    bottom: 40px;
+    left: 640px;
+    margin-left: -150px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    line-height: 60px;
+}
+
+.content5 .container h3:hover {
+    background-color: #ca1d31;
+    transition: all 0.5s;
+}
+
+
+
+
+.content6 {
+    position: relative;
+    top: 750px;
+}
+
+.content6 .container h2 {
+    font-size: 45px;
+    font-weight: 1000;
+    width: 500px;
+    position: absolute;
+    top: -50px;
+    left: 640px;
+    margin-left: -250px;
+}
+
+.content6 .container {
+    margin: auto;
+}
+
+.content6 .container div img {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    position: relative;
+    top: 50px;
+    margin: 0 20px;
+}
+
+.content6 .container div span {
+    position: relative;
+    height: 100px;
+    width: 600px;
+    margin: 0 20px;
+    top: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.5;
+
+}
+
+.content6 .container div .box {
+    width: 600px;
+    height: 190px;
+    margin: 0 20px;
+    background-color: #fff;
+}
+
+.content6 .container div .box:hover {
+    background-color: black;
+    color: #fff;
+    transition: all 0.7s;
+}
+
+.content6 .container div h3 {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    top: 50px;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    top: 950px;
+    width: 100%;
+    height: 400px;
+    background-color: #1c1c1c;
+}
+
+footer .container .logo img {
+    position: relative;
+    width: 100px;
+    bottom: -180px;
+}
+
+footer .container .footer_gnb {
+    position: relative;
+    top: 60px;
+    text-align: left;
+    left: 50px;
+}
+
+footer .container .footer_gnb .box {
+    position: relative;
+    top: -10px;
+}
+
+footer .container .footer_gnb .box h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+footer .container .footer_gnb .box li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+footer .container .footer_gnb .box li a:hover {
+    color: #ca1d31;
+    transition: all 0.5s;
+}
+
+footer .container .footer_gnb .box1 {
+    position: absolute;
+    left: 180px;
+    top: -10px;
+}
+
+footer .container .footer_gnb .box1 h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+footer .container .footer_gnb .box1 li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+footer .container .footer_gnb .box1 li a:hover {
+    color: #ca1d31;
+    transition: all 0.5s;
+}
+
+footer .container .footer_gnb .box2 {
+    position: absolute;
+    left: 400px;
+    top: -10px;
+}
+
+footer .container .footer_gnb .box2 h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+footer .container .footer_gnb .box2 li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+footer .container .footer_gnb .box2 li a:hover {
+    color: #ca1d31;
+    transition: all 0.5s;
+}
+
+footer .container .footer_gnb .box3 {
+    position: absolute;
+    left: 800px;
+    top: -10px;
+}
+
+footer .container .footer_gnb .box3 h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    width: 200px;
+}
+
+footer .container .footer_gnb .box3 li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+footer .container .footer_gnb .box3 li a img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    background-color: #333;
+}
+
+footer .container .footer_gnb .box3 li a img:hover {
+
+    background-color: #040404;
+    transition: all 0.5s;
+}
+
+footer .container .footer_gnb .box3 li:nth-child(2) a img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: -42px;
+    margin-right: 20px;
+    left: 60px;
+}
+
+footer .container .footer_gnb .box3 li:nth-child(3) a img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: -88px;
+    margin-right: 20px;
+    left: 120px;
+
+}
+
+footer .container .footer_gnb .box3 li:nth-child(4) a img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: -134px;
+    margin-right: 20px;
+    left: 180px;
+
+}
+
+
+footer .container .footer_gnb .box4 {
+    position: relative;
+    top: 65px;
+    width: 750px;
+
+}
+
+footer .container .footer_gnb .box4 p {
+    color: #858585;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+footer .container .footer_gnb .box4 p span {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+
+}
+
+footer .container .footer_gnb .box5 {
+    position: absolute;
+    width: 220px;
+    left: 800px;
+    top: 150px;
+}
+
+footer .container .footer_gnb .box5 p {
+    color: #858585;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+footer .container .footer_gnb .box5 p span {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+
+}

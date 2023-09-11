@@ -1,0 +1,14 @@
+.w100 { width: 100%; background-color: pink; }
+
+/* nav */
+nav { width: 100%; background-color: hotpink; }
+.gnb { display: flex; }
+.depth1 a { display: block; padding: 1rem; color: white; font-size: 1.2rem; line-height: 1.2rem; }
+.depth1 { height: 100%; }
+.gnb .w100 { overflow: hidden; height: 0;}
+.depth1>a { color: black; }
+.depth1:hover .w100 { height: auto; }
+.depth1:hover .banner1 .cotainer { display: none; }
+/* 툳베스 200%로 드롭다운 */
+nav { position: relative; }
+nav>.gnb>.depth1>.w100 { position: absolute; left: 0; top:60px; z-index: 999; }

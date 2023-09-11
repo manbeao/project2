@@ -1,4 +1,9 @@
-@charset "utf-8";
+@charset "uft-8";
+
+html {
+    overflow-y: scroll;
+    font-size: 62.5%;
+}
 
 * {
     margin: 0;
@@ -6,602 +11,734 @@
     box-sizing: border-box;
 }
 
-.wrap {
+ul,
+li,
+ol,
+dt,
+dd,
+dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 1.6rem;
+}
+
+a:link,
+a:visited {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.wrap{
+    width: 128rem;
     width: 100%;
     margin: auto;
+}
+.inner {
+    max-width: 128rem;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.df {
+    display: flex;
+}
+
+.tc {
     text-align: center;
 }
 
-a{
-    color: black;
-}
-a:hover{
-    text-decoration: none;
-}
 .container {
     width: 100%;
     max-width: 1280px;
-    height: 100%;
     margin: auto;
-    text-align: center;
-    display: flex;
-    position: relative;
-
 }
 
-/* header */
+.section {
+    margin-bottom: 5rem;
+}
+
+
+/* 상단링크 */
 header{
+    width: 128rem;
+    width: 100%;
+}
+header nav .link {
+    width: 128rem;
     display: flex;
-    
-}
-header .container .logo{
-    width: 20%;
-    height: 10rem;
-}
-header .container .logo{
+    gap: 4rem;
     position: relative;
-    top: 20px;
-    margin: 10px auto;
-    width: 10%;
-    height: 10rem;
-}
-header .container img{
-    justify-content: center;
-    align-items: center;
-}
-header .container .link{
-    position: relative;
-    width: 1024px;
-    height: 5rem;
-    top: 30px;
-    text-align: right;
-    right:5%;
-}
-header .container .link li{
-    display: inline-block;
-    padding-left: 3rem;
+    margin-top: 4rem;
+    right: -43.5rem;
 }
 
-header .container .link li a{
+header nav .link li a {
+    display: block;
     color: #9b9b9b;
-    font-size: 14px;
-    font-weight: bolder;
-}
-header .container .link li:nth-child(4) a{
-    color: #9b9b9b;
-    font-size: 14px;
-    font-weight: 700;
-}
-header .container .link li:nth-child(5) a{
-    color: #9b9b9b;
-    font-size: 14px;
-    font-weight: 700;
-}
-header .container .link li:nth-child(6) a{
-    color: #9b9b9b;
-    font-size: 14px;
-    font-weight: 700;
-}
-header .container .link li a img{
-    position: relative;
-    color: #9b9b9b;
-    width: 14px;
-    height: 14px;
-    top: 2px;
-    right: 7px;
+    text-decoration: none;
+    text-align: center;
 }
 
-/* nav */
-nav{
-    display: flex;
-}
-nav .container .nav{
+/* 상단메뉴바 */
+nav {
     position: relative;
     width: 100%;
-    height: 4rem;
-    line-height: 4rem;
-    text-align: right;
-    right:5%;
-    top: -60px;
+    height: 9.4rem;
+    background-color: #fff;
 }
-nav .container .nav li{
-    display: inline-block;
-    text-align: right;
-    padding-left: 3rem;
+
+nav>.gnb {
+    display: flex;
 }
-nav .container .nav li a{
-    font-size: 16px;
+
+nav>.gnb li {
+    margin: 0 2rem;
+}
+
+nav .dep1:not(:last-child)>a::after{
+    position: relative;
+    content: '/';
     color: black;
-    font-weight: bold;
+    margin-left: 5rem;
 }
-nav .container .nav li:hover:not(.nav li:nth-child(5),.nav li:nth-child(8)) a{
+nav .gnb li>a {
+    display: block;
+    line-height: 9.4rem;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+nav>.gnb li:nth-child(6) a {
+    color: #ca1d31;
+}
+nav>.gnb li:nth-child(8) a {
+    color: #ca1d31;
+}
+nav>.gnb li:nth-child(9) a {
+    color: #ca1d31;
+}
+nav>.gnb li a:hover {
+    color: #ca1d31;
+}
+
+nav .gnb li .logo {
+    width: 18rem;
+    margin: 0 0 0 2.5rem;
+}
+
+nav .gnb li .logo h1 {
+    display: block;
+    background: url(./img/vans-logo.svg) no-repeat center center/18rem;
+    text-indent: 2;
+    overflow: hidden;
+    font-size: 0px;
+}
+
+nav>.gnb>li .menu_title img {
+    width: 135px;
+}
+
+/* 투젭스레이아웃 */
+nav .dep1 ul {
+    display: flex;
+    margin: auto;
+}
+
+nav .dep1 li {
+    flex: 1 1 20rem;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+nav>ul:first-child img{
+    width: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+nav>ul:first-child li:nth-child(2) img{
+    width: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.8rem;
+}
+nav>ul:first-child li:nth-child(3) img{
+    width: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.8rem;
+}
+nav>ul:first-child li:nth-child(6) img{
+    width: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.7rem;
+}
+
+.gnb .dep1 li h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ca1d31;
+    padding-top: 0.2rem;
+}
+
+.gnb .dep1 li dl dt a {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 2;
+    color: #79aecf;
+}
+.gnb .dep1 li dl dt a:hover {
     color: #ca1d31;
     transition: all 0.5s;
 }
-nav .container .nav li:nth-child(5) a{
-    color: #ca1d31;
+
+.gnb .dep1 li h3{
+    margin-bottom: 1rem;
 }
-nav .container .nav li:nth-child(8) a{
-    color: #ca1d31;
-}
-nav .container .nav li a::after{
-    position: relative;
-content: '/';
-color: black;
-left: 20px;
+.gnb .dep1 li h3 a {
+    color: #fff;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 0.3rem;
+    font-size: 22px;
 }
 
+.gnb .dep1 li dd a {
+    color: #777;
+    font-size: 0.8em;
+}
+
+
+/* 투뎁스배경 */
+nav .gnb_bg {
+    position: absolute;
+    background-color: #000;
+    top: 13rem;
+    left: 0;
+    width: 100%;
+    padding: 0 0;
+    transition: all 0.5s;
+    overflow: hidden;
+    height: 0;
+    z-index: 9;
+}
+
+/* hover */
+.gnb .dep1:hover .gnb_bg {
+    padding: 2rem 0;
+    height: 40rem;
+}
+
+.gnb .dep1>a:hover {
+    color: #ca1d31;
+    text-decoration: none;
+}
+
+.gnb .dep1:hover .gnb_bg:before {
+    padding: 2rem;
+    height: auto;
+}
 
 /* main */
-.banner1{
+main .banner1{
     width: 100%;
-    height: 3rem; 
-    background-color: black;
-    position: relative;
-    top: -50px;
+    height: 5rem;
+    background-color: #000;
+    margin-top: 4rem;
+    display: flex;
 
 }
-.banner1 a{
+main .banner1 a{
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
     color: #fff;
     text-align: center;
-    margin: auto;
-    font-size: 12px;
-    font-weight: 900;
-    height: 3rem; 
-    line-height: 3rem;
-
 }
-.banner1 a::before{
+main .banner1 a::before {
     content: '<';
     position: absolute;
-    left: 3%;
+    left: 5%;
 }
-.banner1 a::after{
+.banner1 a::after {
     content: '>';
     position: absolute;
-    right: 3%;
+    right: 5%;
 }
 
-
-.banner2 img{
+.banner2 .bxslider img{
     width: 100%;
-    position: relative;
-    top: -50px;
-    height: auto;
+    margin: auto;
+    padding-left: 5rem;
+}
+.bx-controls{
+   display: none;
 }
 
 
 
 .content1 .container{
-    width: 100%;
-    position: relative;
-    top: 20px;
+    width: 128rem;
+    display: flex;
+    margin: auto;
+    gap: 1rem;
+    padding-left: 5rem;
+    justify-content: space-between;
+}
+.content1 .container ul li {
+    width: 40rem;
+}
+.content1 .container ul li a {
+    display: block;
+    text-align: center;
 }
 
-.content1 .container ul {
-    width: 40rem;
-    margin: auto;
-    transition: all 0.7s;
-}
 .content1 .container ul li a span {
-   font-weight: 500;
-   line-height: 1.7;
+    font-weight: 900;
+    line-height: 1.7;
+    margin-top: 1rem;
 }
-.content1 .container ul li img{
+
+.content1 .container ul li:first-child {
+    min-height: 475px;
+}
+
+.content1 .container ul li img {
     width: 40rem;
     margin: auto;
 }
 
-.content1 .container ul li h3{
-    position: relative;
-    top: 20px;
+.content1 .container ul li h3 {
     font-size: 22px;
     width: 40rem;
-    font-weight: bold;
+    font-weight: 900;
     color: black;
+    margin-top: 1rem;
 }
-.content1 .container ul li:nth-child(2) a{
-    position: relative;
-    top: 40px;
+
+.content1 .container ul li:nth-child(2) a {
     font-size: 16px;
     font-weight: bold;
     background-color: black;
     color: #fff;
     padding: 15px 40px;
+    width: 18rem;
+    margin: auto;
+    text-align: center;
 }
-.content1 .container ul li:nth-child(2) a:hover{
+
+.content1 .container ul li:nth-child(2) a:hover {
     background-color: #ca1d31;
     transition: all 0.5s;
 }
-.content1 .container ul:first-child li:nth-child(2) a{
 
+.content1 .container ul:first-child li:nth-child(2) a {
     top: 50px;
-
-}
-.content1 .container ul:first-child{
-    position: relative;
-    top: 3px;
-}
-.content1 .container ul:first-child img{
-    position: relative;
-    top: -14px;
-}
-.content1 .container ul:first-child h3{
-    position: relative;
-    top: 6px;
-}
-.content1 .container ul:first-child li span{
-    position: relative;
-    top: -15px;
 }
 
 
 
-.content2{
-    position: relative;
-    top: 150px;
+.content2 {
     display: flex;
-    margin: auto;
+    padding-top: 10rem;
 }
 
-.content2 .container{
+.content2 .container {
     width: auto;
     height: auto;
 }
-.content2 .container .box{
+
+.content2 .container .box {
     position: relative;
 }
-.content2 h2{
+
+.content2 h2 {
     width: 400px;
     font-size: 36px;
     font-weight: bold;
     color: black;
     position: absolute;
-    top: -10px;
-    left:540px;
-    margin-left: -200px;
+    margin-left: 35rem;
     text-align: center;
 }
 
-.content2 .container ul{
+.content2 .container ul {
     width: 250px;
     position: relative;
-    top: 70px; 
-    margin: 0 10px;
-transition: all 0.5s;
+    margin: 10rem 1rem;
+    transition: all 0.5s;
+}
 
-}
-.content2 .container ul li{
+.content2 .container ul li {
     width: 100%;
     position: relative;
-    
 }
-.content2 .container ul li img{
+
+.content2 .container ul li img {
     width: 100%;
 }
-.content2 .container ul li a div{
+
+.content2 .container ul li a div {
     position: relative;
-    top: 15px;
+    margin-top: 1.5rem;
     font-size: 14px;
     font-weight: 800;
-color: #ca1d31;
+    color: #ca1d31;
 }
-.content2 .container ul li a span{
-    position: relative;
-    top: 5px;
+
+.content2 .container ul li a span {
     line-height: 1.5;
     font-size: 13px;
     font-weight: 500;
+    margin-top: 1rem;
 }
-.content2 .container ul li a span span{
+
+.content2 .container ul li a span span {
     font-size: 13px;
     font-weight: 900;
 }
-.content2 .container .content2_img1 li:hover img{
+
+.content2 .container .content2_img1 li:hover img {
     transition: all 0.7s;
-    width: 100%;
     width: 250px;
     position: relative;
-    margin-top: -20px; 
+    margin-top: -20px;
     box-shadow: 0px 3px 5px #7a7a7a;
-    background: url(./img/content2-1.jpg);
+    background: url(./img/content2-1.jpg) ;
 }
-.content2 .container .content2_img2 li:hover img{
+
+
+
+.content2 .container .content2_img2 li:hover img {
     transition: all 0.7s;
     width: 100%;
     width: 250px;
     position: relative;
-    margin-top: -20px; 
+    margin-top: -20px;
     box-shadow: 0px 1px 5px #7a7a7a;
     background: url(./img/content2-2.jpg);
 }
-.content2 .container .content2_img3 li:hover img{
+
+.content2 .container .content2_img3 li:hover img {
     transition: all 0.7s;
     width: 100%;
     width: 250px;
     position: relative;
-    margin-top: -20px; 
+    margin-top: -20px;
     box-shadow: 0px 1px 5px #7a7a7a;
     background: url(./img/content2-3.jpg);
 }
-.content2 .container .content2_img4 li:hover img{
+
+.content2 .container .content2_img4 li:hover img {
     transition: all 0.7s;
     width: 100%;
     width: 250px;
     position: relative;
-    margin-top: -20px; 
+    margin-top: -20px;
     box-shadow: 0px 1px 5px #7a7a7a;
     background: url(./img/content2-4.jpg);
 }
 
-
-
-
-.content3{
-    position: relative;
-    top: 300px;
+.content3 {
     display: flex;
+    margin-top: -10rem;
 }
+
 .content3 .container {
     width: auto;
     height: auto;
 }
-.content3 .container h2{
+
+.content3 .container h2 {
     width: 400px;
-    font-size: 50px;
+    font-size: 36px;
     font-weight: bold;
     color: black;
     position: absolute;
-    top: 0;
-    left:540px;
-    margin-left: -200px;
+    margin-left: 35rem;
     text-align: center;
 }
-.content3 .container ul{
+
+.content3 .container ul {
     width: 250px;
     position: relative;
-    top: 80px; 
+    top: 80px;
     margin: 0 10px;
 }
-.content3 .container ul li{
+
+.content3 .container ul li {
     width: 100%;
     position: relative;
-    
 }
-.content3 .container ul li img{
+
+.content3 .container ul li img {
     width: 100%;
     opacity: 0.8;
 }
 
-.content3 .container ul li a span{
+.content3 .container ul li a span {
     position: relative;
     top: 5px;
     line-height: 1.7;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 900;
 }
-.content3 .container ul li img:hover{
+
+.content3 .container ul li img:hover {
     opacity: 1;
     border-radius: 20%;
     transition: all 0.4s;
-    
-}
-.content3 .container ul li:hover a span{
-    border-bottom: #7a7a7a 1px solid;
 }
 
-
-
-
-
-.content4{
-    position: relative;
-    top: 500px;
+.content3 .container ul li:hover a span {
+    border-bottom: #ababab 1px solid;
 }
-.content4 .container{
+
+
+
+.content4 {
+    display: flex;
+    padding-top: 15rem;
+}
+
+.content4 .container {
     width: auto;
     height: auto;
-    
 }
-.content4 .content4_img1{
-    width: 400px;
+
+.content4 .content4_img1 {
+    width: 600px;
     height: 300px;
-    background: url(./img/content4-1.jpg) no-repeat center center;margin: 0 15px;
+    background: url(./img/content4-1.jpg) no-repeat center center;
+    margin: 0 15px;
+
 }
-.content4 .content4_img2{
-    width: 400px;
+.content4 .content4_img1:hover {
+    background-size: 140%;
+    transition: all 5s;
+}
+
+.content4 .content4_img2 {
+    width: 600px;
     height: 300px;
     background: url(./img/content4-2.jpg) no-repeat center center;
     margin: 0 15px;
 }
-.content4 .content4_img3{
-    width: 400px;
+.content4 .content4_img2:hover {
+    background-size: 140%;
+}
+
+.content4 .content4_img3 {
+    width: 600px;
     height: 300px;
     background: url(./img/content4-3.jpg) no-repeat center center;
     margin: 0 15px;
 }
-.content4 .container h2{
+
+.content4 .content4_img3:hover {
+    background-size: 140%;
+}
+.content4 .container h2 {
     text-align: center;
     height: 150px;
     line-height: 150px;
-    
 }
-.content4 .container h2{ 
+
+.content4 .container h2 {
     color: white;
     font-size: 45px;
     font-weight: 900;
 }
-.content4 .container a{
+
+.content4 .container .textbox {
+    margin: auto;
+    width: 100px;
+    margin-top: -3rem;
+
+}
+.content4 .container a {
     display: block;
     line-height: 2;
     color: white;
     font-size: 20px;
     font-weight: 900;
-    position: relative;
-    top: -30px;
-    width: 100px;
-    margin: auto;
-    
+    text-align: center;
 }
-.content4 .container a:hover{
 
+.content4 .container a:hover {
     background-color: #ca1d31;
     transition: all 0.5s;
 }
 
 
-
-
-
-.content5{
-    position: relative;
-    top: 600px;
+.content5 {
+    margin-top: 10rem;
     width: 100%;
-    height: 570px;
+    height: 590px;
     background-color: #f2f2f2;
 }
 
-
-.content5 .container div img{
+.content5 .container div img {
     width: 300px;
-    position: relative;
-    top: 150px;
     margin: 0 10px;
-}
-.content5 .container h2{
-    font-size: 45px;
-    font-weight: 1000;
-    width: 500px;
-    position: absolute;
-    top: 70px;
-    left: 640px;
-    margin-left: -250px;
+    margin-top: 15rem;
 }
 
-.content5 .container>p{
+.content5 .container h2 {
+    width: 400px;
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    margin-left: 45rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.content5 .container>p {
     color: #ca1d31;
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: 900;
     width: 200px;
     position: absolute;
-    top: 40px;
-    left: 640px;
-    margin-left: -100px;
+    margin-left: 55rem;
+    text-align: center;
+    margin-top: 2rem;
 }
-.content5 .container div p{
+
+.content5 .container div p {
     width: 300px;
-    position: relative;
-    top: 160px;
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 900;
     text-align: left;
     margin: auto;
+    margin-top: 2rem;
+}
 
+.content5 .container .content5_img1 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text2);
+    margin-left: 1rem;
 }
-.content5 .container div span{
-    width: 300px;
-    position: relative;
-    top: 180px;
 
-}
-.content5 .container .content5_img1 span{
+.content5 .container .content5_img2 span {
     font-size: 16px;
     font-weight: 900;
     color: var(--text2);
-    right: 112px;
+    margin-left: 1rem;
 }
-.content5 .container .content5_img2 span{
+
+.content5 .container .content5_img3 span {
     font-size: 16px;
     font-weight: 900;
     color: var(--text2);
-    right: 125px;
+    margin-left: 1rem;
 }
-.content5 .container .content5_img3 span{
+
+.content5 .container .content5_img4 span {
     font-size: 16px;
     font-weight: 900;
     color: var(--text2);
-    right: 127px;
+    margin-left: 1rem;
 }
-.content5 .container .content5_img4 span{
-    font-size: 16px;
-    font-weight: 900;
-    color: var(--text2);
-    right: 87px;
-}
-.content5 .container h3{
+
+.content5 .container h3 {
     position: absolute;
-    width: 300px;
-    height: 60px;
-    bottom: 40px;
-    left: 640px;
-    margin-left: -150px;
+    width: 35rem;
+    height: 8rem;
+    margin-top: 47rem;
+    margin-left: 47rem;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 900;
     background-color: black;
     color: #fff;
-    line-height: 60px;
+    line-height: 8rem;
+    text-align: center;
 }
-.content5 .container h3:hover{
+
+.content5 .container h3:hover {
     background-color: #ca1d31;
     transition: all 0.5s;
 }
 
 
 
-
-.content6{
-    position: relative;
-    top: 750px;
+.content6 {
+    display: flex;
+    margin-top: 15rem;
 }
 
-.content6 .container h2{
-    font-size: 45px;
-    font-weight: 1000;
-    width: 500px;
+.content6 .container h2 {
+    width: 400px;
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
     position: absolute;
-    top: -50px;
-    left: 640px;
-    margin-left: -250px;
+    margin-left: 45rem;
+    text-align: center;
+    margin-top: -10rem;
 }
-.content6 .container{
+
+.content6 .container {
     margin: auto;
 }
-.content6 .container div img{
+
+.content6 .container div img {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    position: relative;
-    top: 50px;
-    margin: 0 20px;
-}.content6 .container div span{
-    position: relative;
-    height: 100px;
-    width: 600px;
-    margin: 0 20px;
-    top: 30px;
+    width: 600px; 
+    margin: 0 2rem;
+   
+}
+
+.content6 .container div span {
+    position: absolute;
+    height: 5rem;
+    width: 50rem;
+    margin: 0 5rem;
     font-size: 16px;
     font-weight: 900;
-    line-height: 1.5;
-
+    line-height: 4rem;
+    text-align: center;
+    margin-top: -3rem;
 }
-.content6 .container div .box{
+.content6 .container div span:nth-child(2) {
+    line-height: 2rem;
+}
+
+.content6 .container div .box {
     width: 600px;
-    height: 190px;
+    height: 130px;
     margin: 0 20px;
     background-color: #fff;
+    margin-bottom: 5rem;
 }
-.content6 .container div .box:hover{
+
+.content6 .container div .box:hover {
     background-color: black;
     color: #fff;
     transition: all 0.7s;
 }
-.content6 .container div h3{
-    position: relative;
+
+.content6 .container div h3 {
     width: 600px;
     height: 100px;
-    background-color: ;
-    top: 50px;
     font-size: 27px;
     font-weight: 900;
     line-height: 100px;
@@ -609,187 +746,199 @@ color: #ca1d31;
 }
 
 
-
-
-
-
-
-footer{
-    position: relative;
-    top: 950px;
+footer {
     width: 100%;
-    height: 400px;
+    height: 40rem;
     background-color: #1c1c1c;
 }
 
-footer .container .logo img{
-    position: relative;
+footer .container .logo img {
+    position: absolute;
     width: 100px;
-    bottom: -180px;
+    margin-left: -10rem;
+    margin-top: 20rem;
 }
-footer .container .footer_gnb{
+
+footer .container .footer_gnb {
     position: relative;
     top: 60px;
     text-align: left;
     left: 50px;
 }
+
 footer .container .footer_gnb .box {
     position: relative;
     top: -10px;
 }
-footer .container .footer_gnb .box h3{
-color: #fff;
-font-size: 25px;
-font-weight: 900;
+
+footer .container .footer_gnb .box h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
 }
-footer .container .footer_gnb .box li a{
-color: #858585;
-position: relative;
-top: 20px;
-font-size: 15px;
-font-weight: 700;
-line-height: 2;
+
+footer .container .footer_gnb .box li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
 }
-footer .container .footer_gnb .box li a:hover{
+
+footer .container .footer_gnb .box li a:hover {
     color: #ca1d31;
     transition: all 0.5s;
-    }
-footer .container .footer_gnb .box1{
+}
+
+footer .container .footer_gnb .box1 {
     position: absolute;
     left: 180px;
     top: -10px;
 }
-footer .container .footer_gnb .box1 h3{
-color: #fff;
-font-size: 25px;
-font-weight: 900;
+
+footer .container .footer_gnb .box1 h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
 }
-footer .container .footer_gnb .box1 li a{
-color: #858585;
-position: relative;
-top: 20px;
-font-size: 15px;
-font-weight: 700;
-line-height: 2;
+
+footer .container .footer_gnb .box1 li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
 }
-footer .container .footer_gnb .box1 li a:hover{
+
+footer .container .footer_gnb .box1 li a:hover {
     color: #ca1d31;
     transition: all 0.5s;
-    }
-footer .container .footer_gnb .box2{
+}
+
+footer .container .footer_gnb .box2 {
     position: absolute;
     left: 400px;
     top: -10px;
 }
-footer .container .footer_gnb .box2 h3{
-color: #fff;
-font-size: 25px;
-font-weight: 900;
+
+footer .container .footer_gnb .box2 h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
 }
-footer .container .footer_gnb .box2 li a{
-color: #858585;
-position: relative;
-top: 20px;
-font-size: 15px;
-font-weight: 700;
-line-height: 2;
+
+footer .container .footer_gnb .box2 li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
 }
-footer .container .footer_gnb .box2 li a:hover{
-color: #ca1d31;
-transition: all 0.5s;
+
+footer .container .footer_gnb .box2 li a:hover {
+    color: #ca1d31;
+    transition: all 0.5s;
 }
-footer .container .footer_gnb .box3{
+
+footer .container .footer_gnb .box3 {
     position: absolute;
-    left: 800px;
-    top: -10px;
+    margin-left: 100rem;
+    margin-top: -10.5rem;
 }
-footer .container .footer_gnb .box3 h3{
-color: #fff;
-font-size: 25px;
-font-weight: 900;
-width: 200px;
+
+footer .container .footer_gnb .box3 h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    width: 200px;
 }
-footer .container .footer_gnb .box3 li a{
-color: #858585;
-position: relative;
-top: 20px;
-font-size: 15px;
-font-weight: 700;
-line-height: 1.7;
+
+footer .container .footer_gnb .box3 li a {
+    color: #858585;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
 }
-footer .container .footer_gnb .box3 li a img{
+
+footer .container .footer_gnb .box3 li a img {
     position: relative;
     width: 40px;
     height: 40px;
-    top: 5px;
     background-color: #333;
 }
-footer .container .footer_gnb .box3 li a img:hover{
 
+footer .container .footer_gnb .box3 li a img:hover {
     background-color: #040404;
     transition: all 0.5s;
 }
-footer .container .footer_gnb .box3 li:nth-child(2) a img{
+
+footer .container .footer_gnb .box3 li:nth-child(2) a img {
     position: relative;
     width: 40px;
     height: 40px;
-    top: -42px;
+    top: -39px;
     margin-right: 20px;
     left: 60px;
 }
-footer .container .footer_gnb .box3 li:nth-child(3) a img{
+
+footer .container .footer_gnb .box3 li:nth-child(3) a img {
     position: relative;
     width: 40px;
     height: 40px;
-    top: -88px;
+    top: -80px;
     margin-right: 20px;
     left: 120px;
-    
 }
-footer .container .footer_gnb .box3 li:nth-child(4) a img{
+
+footer .container .footer_gnb .box3 li:nth-child(4) a img {
     position: relative;
     width: 40px;
     height: 40px;
-    top: -134px;
+    top: -120px;
     margin-right: 20px;
     left: 180px;
-    
 }
 
-
-footer .container .footer_gnb .box4{
+footer .container .footer_gnb .box4 {
     position: relative;
     top: 65px;
     width: 750px;
-    
 }
-footer .container .footer_gnb .box4 p{
+
+footer .container .footer_gnb .box4 p {
     color: #858585;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
 }
-footer .container .footer_gnb .box4 p span{
+
+footer .container .footer_gnb .box4 p span {
     color: #ffffff;
     font-size: 15px;
     font-weight: 900;
-
 }
-footer .container .footer_gnb .box5{
+
+footer .container .footer_gnb .box5 {
     position: absolute;
     width: 220px;
-    left: 800px;
+    left: 100rem;
     top: 150px;
 }
-footer .container .footer_gnb .box5 p{
-   color: #858585;
-   font-size: 15px;
-   font-weight: 700;
-   line-height: 1.5;
+
+footer .container .footer_gnb .box5 p {
+    color: #858585;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
 }
-footer .container .footer_gnb .box5 p span{
+
+footer .container .footer_gnb .box5 p span {
     color: #ffffff;
     font-size: 15px;
     font-weight: 900;
-
 }
