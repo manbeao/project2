@@ -5,5 +5,4 @@ $('.bxslider').bxSlider({
     autoControls: true,
     stopAutoOnClick: true,
     pager: true,
-    
   });
