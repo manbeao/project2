@@ -5,5 +5,5 @@ $('.bxslider').bxSlider({
     autoControls: true,
     stopAutoOnClick: true,
     pager: true,
-    slideWidth: 600
+    
   });
