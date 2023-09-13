@@ -973,3 +973,11 @@ footer .container .footer_gnb .box5 p span {
     font-size: 15px;
     font-weight: 900;
 }
+@media screen and (max-width:768px) {
+    .wrap{
+        width: 100%;
+    }
+    .link{
+        font-size: 50%;
+    }
+}
